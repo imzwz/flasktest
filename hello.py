@@ -27,10 +27,15 @@ def user(name):
     #if request.method =='POST':
     #    content = request.form['content']
     #    return render_template('user1.html', name=content)
-    return render_template('user.html', name)
+    return render_template('user.html', name=name)
+
+@app.route('/abstract/')
+def abstract():
+    return render_template('abstract.html', title_name = 'abstract demo')
 
 @app.route('/')
 def home():
     return render_template('home.html', title_name = 'welcome')
+
 if __name__ == '__main__':
     app.run()
