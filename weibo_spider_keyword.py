@@ -12,7 +12,10 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/602.2.14 (KHTML, like Gecko) Version/10.0.1 Safari/602.2.14"}
-cookies = {"SUB":"_2A253FogTDeThGeBO7FUU9S7IzDqIHXVU-ChbrDV6PUJbktANLWL_kW1NHetkT2woukv4pz4mMa896p4uw0eODadY", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMweZ0KnaDx9Msob3KxImqnUwGDuARmSV3Q1pegqS5axrhg."}
+cookies = {"SUB":"_2A253ECFtDeThGeBO7FUS8irFyDSIHXVU-08lrDV6PUJbktAKLUnCkW1NHetkT3I75SyqDF5Zqbllb6kYm6tPNDUY", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMweHFXdu-nSvOFl1umeuLl6Wf3c7TTQp4bfBx7DZ2cZnd8."}
+cookies = {"SUB":"_2A253ECDfDeThGeBO7FUS8irFyDWIHXVU-0CXrDV6PUJbktANLRnGkW1NHetkTyiyJKDjyDutk2uMniHatvBaDm9z", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMwetj6Wf_mBAuawQO-wNOA1nSKJMlF-ITrLcLMr8TALCI4."}
+cookies = {"SUB":"_2A253ED-ADeThGeBO7FUU9S7IzDiIHXVU-0HIrDV6PUJbktANLWmskW1NHetkT18-J5tihkH4qwcqeOqaysdrzwxX", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMwe8w_ZizaqQfx06gll65eie4bYYo3cef3ReOPAvr"}
+#cookies = {"SUB":"_2A253FogTDeThGeBO7FUU9S7IzDqIHXVU-ChbrDV6PUJbktANLWL_kW1NHetkT2woukv4pz4mMa896p4uw0eODadY", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMweZ0KnaDx9Msob3KxImqnUwGDuARmSV3Q1pegqS5axrhg."}
 #cookies = {"SUB":"_2A253C9_GDeThGeBO41MV-SnOyzWIHXVU9-GOrDV6PUJbktAKLXPQkW0bP81-DJOpRtZ_EQfHvEhrGAgaHg..", "_T_WM":"4cf6995c969bbc6014318d68fcf2f55d", "SCF":"Ao7zgvhWf6yewEBq7gC4fesKQQafgCrFtDaVLVmAFMwe_HTZyZ6JATXY2N_wBEeMq6iBDyl0NbRuD2K1JPLWR2E"}
 proxies = {'https':'https://10.2.170.20:80', 'http':'http://10.2.170.20:80'}
 #conn=MySQLdb.connect(host="10.18.65.69",user="recom_tag_rw",passwd="+3jF1cr3z5B4CbB",db="recom_tag",charset="utf8") 
