@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventmap</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/htmleaf-demo.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css"/>
+    <script src="{{url_for('static', filename='js/jquery-2.1.1.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='js/modernizer.js')}}" ></script>
+    <script src="{{url_for('static', filename='js/pic.js')}}" ></script>
+	<!--
+    <script src="{{url_for('static', filename='js/echarts.min.js')}}" ></script>
+    <script src="{{url_for('static', filename='js/china.js')}}" ></script>
+	-->
+</head>
+
+<body>
+    <header class="cd-main-header animate-search">
+        <div class="cd-logo">
+            <a href="#0"><img src="{{url_for('static', filename='img/cd-logo.svg')}}" alt="Logo"></a>
+        </div>
+
+        <nav class="cd-main-nav-wrapper">
+            <a href="#search" class="cd-search-trigger cd-text-replace">Search</a>
+
+            <ul class="cd-main-nav">
+				<li><a href="/">首页</a></li>
+                <li><a href="/event">热门突发事件</a></li>
+                <li><a href="/eventsearch">突发事件搜索</a></li>
+                <li><a href="/getinfo">信息获取</a></li>
+                <li><a href="/help">帮助</a></li>
+            </ul>
+            <!-- .cd-main-nav -->
+        </nav>
+        <a href="#0" class="cd-nav-trigger cd-text-replace">Menu<span></span></a>
+    </header>
+
+	<main class="cd-main-index">
+        <!-- your content here -->
+        <div class="content-center">
+            <!-- <h1>Advanced Search Form</h1> -->
+            <div id="indextitle">
+                危害国家安全的突发事件搜索系统
+            </div>
+            
+            <!--
+            <script language="javascript" src="{{url_for('static', filename='js/pic.js')}}" ></script>
+			<script language="javascript" >
+var da=[];
+
+da.push({src:"img/dongfang.jpg",name:"第一张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});
+da.push({src:"http://10186.yxsss.com/data/upload/2012/11/21/1353478162_8546_6161.jpg",name:"第二张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});
+da.push({src:"http://10186.yxsss.com/data/upload/2012/11/21/1353478182_8116_1748.jpg",name:"第四张",link:"http://www.yxsss.com/sg.php?fp=0&tag=%E7%BE%8E%E5%A5%B3"});
+da.push({src:"http://ciaos.yxsss.com/data/upload/2013/01/18/1358475420_6324_6343.jpg",name:"第五张",link:"http://ciaos.yxsss.com/yw2048.html"});
+da.push({src:"http://money.yxsss.com/data/upload/2012/11/24/1353722374_2092_5298.jpg",name:"第六张",link:"http://money.yxsss.com/yw616.html"});
+
+var c={
+	 bg:"#333",//右下数字背景颜色
+	 color:"#FFF",//右下数字颜色
+	 cbg:"#FFF",//右下当前数字背景颜色
+	 ccolor:"#333",//右下当前数字颜色
+	 bc:"#ccc",//边框颜色
+	 step:6000 //步长
+	}
+new IMGS("TopI",600,430,da,c);
+//new IMGS("id号随便写不要和页面的id重复就可以",宽度,高度,数据[,设置]);
+</script>
+            -->
+        </div>
+    </main>
+
+    <div id="search" class="cd-main-search">
+        <form method="post" >
+            <input type="search" name="content" placeholder="Search...">
+
+            <div class="cd-select">
+                <span>in</span>
+                <select name="select-category">
+					<option value="all-categories">all Categories</option>
+					<option value="category1">2016</option>
+					<option value="category2">2015</option>
+					<option value="category3">2014</option>
+				</select>
+                <span class="selected-value">all Categories</span>
+            </div>
+        </form>
+
+        <div class="cd-search-suggestions">
+            <div class="news">
+                <h3>Event</h3>
+                <ul>
+                    <li>
+                        <a class="image-wrapper" href="kunming.html"><img src="{{url_for('static', filename='img/kunming.jpg')}}" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="kunming.html">昆明火车站暴力恐怖案</a></h4>
+                        <time datetime="2014-3-1">March 1, 2014</time>
+                    </li>
+
+                    <li>
+                        <a class="image-wrapper" href="#0"><img src="{{url_for('static', filename='img/mahang.jpg')}}" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="#0">马来西亚航班失踪事件</a></h4>
+                        <time datetime="2014-3-8">March 8, 2014</time>
+                    </li>
+
+                    <li>
+                        <a class="image-wrapper" href="#0"><img src="{{url_for('static', filename='img/dongfang.jpg')}}" alt="News image"></a>
+                        <h4><a class="cd-nowrap" href="#0">东方之星旅游客船倾覆事件</a></h4>
+                        <time datetime="2015-06-01">June 1, 2015</time>
+                    </li>
+                </ul>
+            </div>
+            <!-- .news -->
+
+            <!-- .quick-links -->
+        </div>
+        <!-- .cd-search-suggestions -->
+
+        <a href="#0" class="close cd-text-replace">Close Form</a>
+    </div>
+    <!-- .cd-main-search -->
+    <div class="cd-cover-layer"></div>
+    <!-- cover main content when search form is open -->
+    <script src="{{url_for('static', filename='js/jquery-2.1.1.min.js')}}" type="text/javascript"></script>
+    <!--
+    <script>
+        window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js"><\/script>')
+    </script>
+    -->
+    <script src="{{url_for('static', filename='js/main.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/pic.js')}}" type="text/javascript"></script>
+    <!-- Resource jQuery -->
+</body>
+</html>
